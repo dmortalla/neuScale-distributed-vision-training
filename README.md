@@ -37,7 +37,6 @@ This project demonstrates practical skills in scalable deep learning training, G
 
 ## 📦 Installation
 
-```bash
 pip install -r requirements.txt
 accelerate config
 
@@ -52,7 +51,6 @@ requirements.txt         # Dependencies
 
 At a high level, the training system looks like this:
 
-```text
            +--------------------------+
            |      CIFAR-10 Dataset    |
            +-------------+------------+
