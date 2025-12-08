@@ -7,7 +7,7 @@
 ![Transformer](https://img.shields.io/badge/Model-Swin%20Transformer-green)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow)
 
-> Multi-GPU Swin Transformer training framework built with PyTorch + Hugging Face Accelerate. Implements windowed attention, mixed precision, gradient checkpointing, and GPU throughput optimization.
+> A high-performance distributed vision training framework built with PyTorch and Hugging Face Accelerate. Includes multi-GPU data parallelism, flexible optimizer configuration, mixed precision, and profiling hooks for scalable deep-learning experimentation.
 
 ---
 
