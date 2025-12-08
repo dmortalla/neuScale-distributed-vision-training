@@ -37,6 +37,7 @@ This project demonstrates practical skills in scalable deep learning training, G
 
 ## 📦 Installation
 
+```bash
 pip install -r requirements.txt
 accelerate config
 
@@ -44,6 +45,7 @@ accelerate launch train_swin_cifar10.py
 
 train_swin_cifar10.py   # Main distributed training script
 requirements.txt         # Dependencies
+```
 
 ---
 
