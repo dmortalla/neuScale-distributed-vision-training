@@ -1,25 +1,42 @@
-# NeuScale Distributed Vision Training Framework (Swin Transformer + Accelerate)
+# NeuScale Distributed Vision Training Framework
 
-> Multi-GPU Swin Transformer training framework built with PyTorch + HF Accelerate. Implements windowed attention, mixed precision, gradient checkpointing, and GPU throughput tuning.
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.2-red)
+![GPU](https://img.shields.io/badge/Accelerated-GPU-4B8BBE)
+![Distributed](https://img.shields.io/badge/Distributed-HF%20Accelerate-orange)
+![Transformer](https://img.shields.io/badge/Model-Swin%20Transformer-green)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow)
 
-This project trains a Swin Transformer model on CIFAR-10 using PyTorch and Hugging Face Accelerate
-for easy multi-GPU / multi-process training.
+> Multi-GPU Swin Transformer training framework built with PyTorch + Hugging Face Accelerate. Implements windowed attention, mixed precision, gradient checkpointing, and GPU throughput optimization.
 
-It demonstrates:
-- Distributed training with `accelerate`
-- GPU-aware data input pipelines
-- Gradient accumulation and mixed precision
-- Modular training loop and clear logging
+---
 
-## Quickstart
+## 🚀 Overview
+NeuScale is a **distributed vision training system** built for CIFAR-10, showcasing real-world ML engineering techniques:
+
+- Multi-GPU training with **Hugging Face Accelerate**
+- Fine-tuning **Swin Transformer** from torchvision
+- **Mixed Precision (fp16)** for speed & VRAM savings
+- **Gradient checkpointing** to reduce memory footprint
+- Dataloader & GPU utilization optimization
+- Clean modular training loop used in production systems
+
+This project demonstrates practical skills in scalable deep learning training, GPU performance engineering, and transformer-based visual architectures.
+
+---
+
+## 🧩 Features
+- Distributed multi-GPU training  
+- Automatic mixed precision  
+- Swin Transformer backbone  
+- Efficient data pipelines  
+- Automatic checkpointing  
+- Configurable hyperparameters  
+
+---
+
+## 📦 Installation
 
 ```bash
 pip install -r requirements.txt
-accelerate config   # run once
-accelerate launch train_swin_cifar10.py
-```
-
-## Files
-
-- `train_swin_cifar10.py` — main training script (single or multi-GPU)
-- `requirements.txt` — Python dependencies
+accelerate config
