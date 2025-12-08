@@ -1,11 +1,10 @@
 # NeuScale Distributed Vision Training Framework
 
-![Python](https://img.shields.io/badge/Python-3.10-blue)
-![PyTorch](https://img.shields.io/badge/PyTorch-2.2-red)
-![GPU](https://img.shields.io/badge/Accelerated-GPU-4B8BBE)
-![Distributed](https://img.shields.io/badge/Distributed-HF%20Accelerate-orange)
-![Transformer](https://img.shields.io/badge/Model-Swin%20Transformer-green)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow)
+![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.x-red)
+![Accelerate](https://img.shields.io/badge/HF-Accelerate-orange)
+![GPU](https://img.shields.io/badge/Compute-Multi--GPU-green)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 > A high-performance distributed vision training framework built with PyTorch and Hugging Face Accelerate. Includes multi-GPU data parallelism, flexible optimizer configuration, mixed precision, and profiling hooks for scalable deep-learning experimentation.
 
