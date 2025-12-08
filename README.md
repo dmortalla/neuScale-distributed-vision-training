@@ -1,5 +1,7 @@
 # NeuScale Distributed Vision Training Framework (Swin Transformer + Accelerate)
 
+> Multi-GPU Swin Transformer training framework built with PyTorch + HF Accelerate. Implements windowed attention, mixed precision, gradient checkpointing, and GPU throughput tuning.
+
 This project trains a Swin Transformer model on CIFAR-10 using PyTorch and Hugging Face Accelerate
 for easy multi-GPU / multi-process training.
 
