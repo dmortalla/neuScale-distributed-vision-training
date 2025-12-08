@@ -46,3 +46,49 @@ accelerate launch train_swin_cifar10.py
 train_swin_cifar10.py   # Main distributed training script
 requirements.txt         # Dependencies
 
+---
+
+## 🧱 Architecture Overview
+
+At a high level, the training system looks like this:
+
+```text
+           +--------------------------+
+           |      CIFAR-10 Dataset    |
+           +-------------+------------+
+                         |
+                         v
+                torchvision.datasets
+                         |
+                         v
+           +-------------+-------------+
+           |  DataLoader (shuffled,    |
+           |  pinned memory, workers)  |
+           +-------------+-------------+
+                         |
+                         v
+                Accelerate.prepare(...)
+                         |
+                         v
+           +-------------+-------------+
+           |  Swin Transformer (Tiny)  |
+           |  - Windowed attention     |
+           |  - Patch embedding        |
+           |  - Custom classification  |
+           |    head for 10 classes    |
+           +-------------+-------------+
+                         |
+                         v
+               CrossEntropyLoss + AdamW
+                         |
+                         v
+           +-------------+-------------+
+           |  Mixed Precision (fp16)   |
+           |  Gradient checkpointing   |
+           |  Multi-GPU orchestration  |
+           +---------------------------+
+
+---
+
+## 📜 License
+This project is licensed under the MIT License — see the LICENSE file for details.
