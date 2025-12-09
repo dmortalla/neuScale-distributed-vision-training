@@ -24,6 +24,18 @@ This project demonstrates practical skills in scalable deep learning training, G
 
 ---
 
+## 🚀 Quickstart Demo (For Reviewers)
+
+Run a single-epoch distributed training demo on CIFAR-10.
+
+```bash
+pip install -r requirements.txt
+accelerate config     # done once per machine
+python run_demo.py
+```
+
+---
+
 ## 🧩 Features
 - Distributed multi-GPU training  
 - Automatic mixed precision  
