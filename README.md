@@ -72,16 +72,6 @@ neuScale provides:
 
 ---
 
-## 🤝 Contributing
-See **CONTRIBUTING.md** for coding standards, branching rules, and PR workflow.
-
----
-
-## 📄 License
-MIT License. See `LICENSE` for details.
-
----
-
 ## 🧱 Architecture Overview
 
 At a high level, the training system looks like this:
@@ -121,3 +111,12 @@ At a high level, the training system looks like this:
            |  Multi-GPU orchestration  |
            +---------------------------+
 
+---
+
+## 🤝 Contributing
+See **CONTRIBUTING.md** for coding standards, branching rules, and PR workflow.
+
+---
+
+## 📄 License
+MIT License. See `LICENSE` for details.
