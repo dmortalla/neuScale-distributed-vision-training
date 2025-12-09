@@ -24,7 +24,7 @@ This project demonstrates practical skills in scalable deep learning training, G
 
 ---
 
-## 🚀 Quickstart Demo (For Reviewers)
+## ▶️ Quickstart Demo (For Reviewers)
 
 Run a single-epoch distributed training demo on CIFAR-10.
 
