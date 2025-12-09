@@ -1,32 +1,18 @@
-# NeuScale Distributed Vision Training Framework
+# 🚀 neuScale — Distributed Vision Training Framework
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
-![PyTorch](https://img.shields.io/badge/PyTorch-2.x-red)
-![Accelerate](https://img.shields.io/badge/HF-Accelerate-orange)
-![GPU](https://img.shields.io/badge/Compute-Multi--GPU-green)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)]()
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.x-red.svg)]()
+[![Accelerate](https://img.shields.io/badge/HF-Accelerate-orange.svg)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)]()
 
-> A high-performance distributed vision training framework built with PyTorch and Hugging Face Accelerate. Includes multi-GPU data parallelism, flexible optimizer configuration, mixed precision, and profiling hooks for scalable deep-learning experimentation.
-
----
-
-## 🚀 Overview
-NeuScale is a **distributed vision training system** built for CIFAR-10, showcasing real-world ML engineering techniques:
-
-- Multi-GPU training with **Hugging Face Accelerate**
-- Fine-tuning **Swin Transformer** from torchvision
-- **Mixed Precision (fp16)** for speed & VRAM savings
-- **Gradient checkpointing** to reduce memory footprint
-- Dataloader & GPU utilization optimization
-- Clean modular training loop used in production systems
-
-This project demonstrates practical skills in scalable deep learning training, GPU performance engineering, and transformer-based visual architectures.
+## ⚡ Tagline
+Distributed PyTorch training framework for CIFAR-10 using Hugging Face Accelerate and multi-GPU optimization.
 
 ---
 
-## ▶️ Quickstart Demo (For Reviewers)
+## 🚀 Quickstart Demo (For Reviewers)
 
-Run a single-epoch distributed training demo on CIFAR-10.
+Run a **single-epoch distributed training demo**:
 
 ```bash
 pip install -r requirements.txt
@@ -34,29 +20,65 @@ accelerate config     # done once per machine
 python run_demo.py
 ```
 
----
-
-## 🧩 Features
-- Distributed multi-GPU training  
-- Automatic mixed precision  
-- Swin Transformer backbone  
-- Efficient data pipelines  
-- Automatic checkpointing  
-- Configurable hyperparameters  
+This verifies GPU discovery, distributed setup, loss computation, and backprop — ideal for Outlier technical reviewers.
 
 ---
 
-## 📦 Installation
+## 📦 Installation (Full Training)
 
 ```bash
 pip install -r requirements.txt
 accelerate config
-
 accelerate launch train_swin_cifar10.py
-
-train_swin_cifar10.py   # Main distributed training script
-requirements.txt         # Dependencies
 ```
+
+---
+
+## 📁 Files
+
+```text
+train_swin_cifar10.py   # Full distributed training script
+run_demo.py             # Lightweight single-epoch demo script
+requirements.txt        # Dependencies
+```
+
+---
+
+## 🏗 Overview
+
+neuScale provides:
+
+- Multi-GPU distributed training via **Hugging Face Accelerate**
+- Swin Transformer (tiny) training pipeline
+- Mixed precision (fp16/bf16)
+- Configurable optimizers + schedulers
+- Metrics, logging, and progress tracking
+- Clean, modular training loop
+
+---
+
+## 📂 Project Structure
+
+```text
+.
+├── train_swin_cifar10.py
+├── run_demo.py
+├── requirements.txt
+├── CONTRIBUTING.md
+└── .github/
+    └── workflows/
+        └── tests.yml
+```
+
+---
+
+## 🤝 Contributing
+See **CONTRIBUTING.md** for coding standards, branching rules, and PR workflow.
+
+---
+
+## 📄 License
+MIT License. See `LICENSE` for details.
 
 ---
 
