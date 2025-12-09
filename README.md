@@ -121,7 +121,3 @@ At a high level, the training system looks like this:
            |  Multi-GPU orchestration  |
            +---------------------------+
 
----
-
-## 📜 License
-This project is licensed under the MIT License — see the LICENSE file for details.
