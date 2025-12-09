@@ -1,9 +1,10 @@
 # neuScale — Distributed Vision Training Framework
 
-[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)]()
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.x-red.svg)]()
-[![Accelerate](https://img.shields.io/badge/HF-Accelerate-orange.svg)]()
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)]()
+![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.x-red)
+![Accelerate](https://img.shields.io/badge/HF-Accelerate-orange)
+![GPU](https://img.shields.io/badge/Compute-Multi--GPU-green)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## ⚡ Tagline
 Distributed PyTorch training framework for CIFAR-10 using Hugging Face Accelerate and multi-GPU optimization.
